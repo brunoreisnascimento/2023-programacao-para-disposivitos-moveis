@@ -56,8 +56,8 @@ let modeloArray = [10,2,1,50,9,8,7,0];
 let testeOutro = ["teste",1, 10,"bolinha"];
 
 for (let index = 0; index < testeOutro.length; index++) {
-    const element = testeOutro[index];
-    console.log("For: ", element);
+   // const element = testeOutro[index];
+    console.log("For: ", testeOutro[index]);
 }
 
 testeOutro.forEach(element => {
@@ -65,26 +65,38 @@ testeOutro.forEach(element => {
 });
 
 for (const key in testeOutro) {
-    const element = testeOutro[key];
-    console.log("For in: ", element);
+    console.log("Key: ", key);
+    console.log("For in: ", testeOutro[key]);
 }
 
 testeOutro.map((t1) => {console.log("Map: ", t1);});
 
 console.log(modeloArray);
 
-let filtro = modeloArray.filter((m)=> m >= 8);
-console.log(filtro);
+let filtro = testeOutro.filter((m)=> m >= 8);
+console.log("Filtro: ", filtro);
 
-let teste3 = modeloArray.filter((t) => t > 3).map((t)=> {
-    console.log("Map + filter: ", t);
-});
+const aux = [];
+for (let index = 0; index < testeOutro.length; index++) {
+    if(testeOutro[index] >=8){
+        aux.push(testeOutro[index])
+    }
+}
+console.log("Aux: ", aux);
+//let modeloArray = [10,2,1,50,9,8,7,0];
+
+let teste2 = modeloArray.filter((t) => t > 3);
+console.log("Teste2: ", teste2);
+let teste3 = modeloArray.filter((t) => t > 3).map((t)=> console.log("Map + filter: ", t));
 
 let filtrados = [];
 for (let index = 0; index < modeloArray.length; index++) {
     if(modeloArray[index] >=8){
         filtrados.push(modeloArray[index])
     }
+}
+for (let index = 0; index < filtrados.length; index++) {
+    console.log("jeito Nogento: ", filtrados[index]);
 }
 
 console.log(filtrados);
