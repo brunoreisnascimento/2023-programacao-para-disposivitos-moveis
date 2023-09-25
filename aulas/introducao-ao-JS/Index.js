@@ -49,3 +49,42 @@ switch (hora !== '' && minutos !== '') {
         console.log("Horário inválido!");
         break;
 }
+
+
+let modeloArray = [10,2,1,50,9,8,7,0];
+
+let testeOutro = ["teste",1, 10,"bolinha"];
+
+for (let index = 0; index < testeOutro.length; index++) {
+    const element = testeOutro[index];
+    console.log("For: ", element);
+}
+
+testeOutro.forEach(element => {
+    console.log("forEach: ",element);
+});
+
+for (const key in testeOutro) {
+    const element = testeOutro[key];
+    console.log("For in: ", element);
+}
+
+testeOutro.map((t1) => {console.log("Map: ", t1);});
+
+console.log(modeloArray);
+
+let filtro = modeloArray.filter((m)=> m >= 8);
+console.log(filtro);
+
+let teste3 = modeloArray.filter((t) => t > 3).map((t)=> {
+    console.log("Map + filter: ", t);
+});
+
+let filtrados = [];
+for (let index = 0; index < modeloArray.length; index++) {
+    if(modeloArray[index] >=8){
+        filtrados.push(modeloArray[index])
+    }
+}
+
+console.log(filtrados);
