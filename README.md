@@ -1,8 +1,8 @@
 
-# Programação para Dispositivos Móveis - 2023
-Bem-vindo ao repositório da disciplina de Programação para dispositivos móveis!
+# Tópicos Avançados em Desenvolvimento WEB - 2023
+Bem-vindo ao repositório da disciplina de Desenvolvimento de Interfaces WEB!
 
-Este repositório contém os códigos-fonte desenvolvidos ao longo da disciplin na FANESE. Aqui você encontrará exemplos, exercícios e projetos relacionados ao desenvolvimento de interfaces web.
+Este repositório contém os códigos-fonte desenvolvidos ao longo da disciplina INF0052 na FANESE. Aqui você encontrará exemplos, exercícios e projetos relacionados ao desenvolvimento de interfaces web.
 
 ## Estrutura do Repositório
 O repositório está organizado da seguinte forma:
